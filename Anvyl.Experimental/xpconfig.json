@@ -1,0 +1,28 @@
+﻿{
+  "Accufiguration": {
+    "BaseUrl": "http://sf-clip-dev.eastus.cloudapp.azure.com:8487",
+    "LocalIisPort": 7211,
+    "LocalProjectPort": 7212,
+    "ServiceFabricPort": 8487,
+    "Application": "AccuWebClip",
+    "Environment": "development",
+    "Site": "accuwebclip-alerts-eastus",
+
+    "Sources": {
+      "Settings": {
+        "Schema": "settings",
+        "SchemaVersion": "11"
+        //"ValuesVersion": "", // to [re]load 'active' version
+      },
+      "AlertMetaData": {
+        "Schema": "alert-metadata",
+        "SchemaVersion": "2"
+      }
+    },
+    "ReloadTimer": {
+      "RepeatInterval": "00:15:00",
+      "RetryInterval": "00:01:00",
+      "MaxRetryInterval": "00:15:00"
+    }
+  }
+}

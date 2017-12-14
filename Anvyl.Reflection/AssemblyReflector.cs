@@ -71,11 +71,10 @@ namespace Anvyl.Reflection
             DataField field = null;
             if (t.IsGenericType)
             {
-                Console.WriteLine("\tGeneric");
                 if (t.GetGenericTypeDefinition() == typeof(Nullable<>))
                 {
-                    Console.WriteLine("\t\tNullable");
-                    Console.WriteLine("\t\t\t" + Nullable.GetUnderlyingType(t));
+                    //Console.WriteLine("\t\tNullable");
+                    Console.WriteLine("\t" + Nullable.GetUnderlyingType(t));
                     if (RegisteredConversions.ContainsKey(t))
                     {
                         Console.WriteLine("\t\tRegistered Type Nullable<" + Nullable.GetUnderlyingType(t) + "> " + RegisteredConversions[t].FQN);
@@ -86,12 +85,27 @@ namespace Anvyl.Reflection
                 }
                 else
                 {
-                    Console.WriteLine("\t\tNot Nullable");
+                    Console.WriteLine("\tGeneric");
+                    //field = new DataField(t.Name, t.Name, ListType)
+                    //Console.WriteLine("\t\tNot Nullable");
+
+                    //gather all generic params
                     Type[] typeParameters = t.GetGenericArguments();
-                    foreach (Type tp in typeParameters)
+                    var gType = t.GetGenericTypeDefinition().Name;
+                    var genericName = gType.Substring(0, gType.IndexOf('`'));
+                    if (RegisteredConversions.ContainsKey(t.GetGenericTypeDefinition()))
                     {
-                        ParseType(tp);
+                        field = new DataField(t.Name, t.Name, RegisteredConversions[t.GetGenericTypeDefinition()]);
+                        List<DataField> datatypeParams = new List<DataField>();
+                        foreach (Type tp in typeParameters)
+                        {
+                            var generic_fd = ParseType(tp);
+                            datatypeParams.Add(generic_fd);
+                            field.GenericParameters.Add(generic_fd);
+                        }
                     }
+
+
                 }
 
             }
