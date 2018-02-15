@@ -20,7 +20,7 @@ namespace Anvyl.Data
         public List<IDatatype> GenericTypes { get; } = new List<IDatatype>();
         public List<IDatatype> Fields = new List<IDatatype>();
         public bool IsNullable => true;
-
+        public bool IsPOCO => false;
         public bool IsValid
         {
             get
@@ -54,6 +54,11 @@ namespace Anvyl.Data
         public bool Validate<T>(T data)
         {
             return true;
+        }
+
+        public Type GetCodeType()
+        {
+            return typeof(object);
         }
     }
 }

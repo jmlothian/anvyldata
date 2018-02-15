@@ -16,10 +16,14 @@ namespace Anvyl.Data.csharp
 
     public class BoolType : IDatatype
     {
+        public Type GetCodeType()
+        {
+            return typeof(bool);
+        }
         public string FQN => "csharp.bool";
         public List<IDatatype> GenericTypes { get; } = new List<IDatatype>();
         public bool IsNullable => false;
-
+        public bool IsPOCO => true;
         public bool IsValid { get
             {
                 return true;

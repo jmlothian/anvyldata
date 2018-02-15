@@ -6,9 +6,11 @@ namespace Anvyl.Data.Validation.Abstract
 {
     public interface IValidationResponse
     {
-        bool Passed { get; }
-        string ErrorMessage { get; }
-        string ErrorCode { get; }
-        string FQN { get; }
+        bool Passed { get; set; }
+        string ErrorMessage { get; set; }
+        string ErrorCode { get; set; }
+        string FQN { get; set; }
+        List<IValidationResponse> ChildResponses { get; set; }
+        string Path { get; set; }
     }
 }

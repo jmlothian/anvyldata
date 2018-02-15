@@ -1,0 +1,104 @@
+{
+  "Accufiguration": {
+    "Sources": {
+      "AlertMetaData": {
+        "SchemaVersion": "2",
+        "Schema": "alert-metadata"
+      }
+    },
+    "SomeList": [
+      "item1",
+      "item2"
+    ],
+    "Site": "accuwebclip-alerts-eastus",
+    "ServiceFabricPort": "8487",
+    "ReloadList": [
+      {
+        "ListThings": [
+          {
+            "MyThing": "this thing 2",
+            "ints": [
+              "2",
+              "2",
+              "3"
+            ],
+            "dicts": {
+              "str1": "string 21",
+              "str2": "string 22"
+            }
+          },
+          {
+            "MyThing": "this thing 3",
+            "ints": [
+              "3",
+              "2",
+              "3"
+            ],
+            "dicts": {
+              "str1": "string 31",
+              "str2": "string 32"
+            }
+          }
+        ],
+        "Things": {
+          "MyThing": "this thing",
+          "ints": [
+            "1",
+            "2",
+            "3"
+          ],
+          "dicts": {
+            "str1": "string 1",
+            "str2": "string 2"
+          }
+        }
+      },
+      {
+        "ListThings": [
+          {
+            "MyThing": "this thing 52",
+            "ints": [
+              "52",
+              "2",
+              "3"
+            ],
+            "dicts": {
+              "str1": "string 51",
+              "str2": "string 52"
+            }
+          },
+          {
+            "MyThing": "this thing 63",
+            "ints": [
+              "63",
+              "2",
+              "3"
+            ],
+            "dicts": {
+              "str1": "string 61",
+              "str2": "string 62"
+            }
+          }
+        ],
+        "Things": {
+          "MyThing": "this thing 4",
+          "ints": [
+            "41",
+            "2",
+            "3"
+          ],
+          "dicts": {
+            "str1": "string 41",
+            "str2": "string 42"
+          }
+        }
+      }
+    ],
+    "LocalProjectPort": "7212",
+    "LocalIisPort": "7211",
+    "Environment": "development",
+    "BaseUrl": "http://sf-clip-dev.eastus.cloudapp.azure.com:8487",
+    "Application": "AccuWebClip",
+    "ReloadTimer": {}
+  }
+}

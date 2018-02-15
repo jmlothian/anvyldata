@@ -32,6 +32,8 @@ namespace Anvyl.Data.csharp
         //bind to the static version
         public IDatatype Datatype => _dataType;
 
+        public bool IsPOCO => true;
+
         public NullableBoolValue GetValue<NullableBoolValue>()
         {
             throw new NotImplementedException();
@@ -51,6 +53,11 @@ namespace Anvyl.Data.csharp
         public bool Validate<T>(T data)
         {
             return true;
+        }
+
+        public Type GetCodeType()
+        {
+            return typeof(bool?);
         }
     }
 }

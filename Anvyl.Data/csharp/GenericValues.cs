@@ -35,9 +35,12 @@ namespace Anvyl.Data.csharp
                 return val;
             }
         }*/
-
+        public Type GetCodeType()
+        {
+            return typeof(List<>);
+        }
         public bool IsNullable => true;
-
+        public bool IsPOCO => false;
         public bool IsValid
         {
             get
@@ -77,20 +80,26 @@ namespace Anvyl.Data.csharp
 
     public class DictionaryType : IDatatype
     {
-        private string _FQN = "csharp.dictionary<$1,$2>";
-        public string FQN
+        public string FQN => "csharp.dictionary<$1,$2>";
+        public bool IsPOCO => false;
+        public Type GetCodeType()
         {
-            get
-            {
-                string val = _FQN;
-                for (int i = 0; i < GenericTypes.Count; i++)
-                {
-                    val = val.Replace("$" + (i + 1).ToString(), GenericTypes[i].FQN);
-                }
-                return val;
-            }
+            return typeof(Dictionary<,>);
         }
-
+        
+        /*        public string FQN
+                {
+                    get
+                    {
+                        string val = _FQN;
+                        for (int i = 0; i < GenericTypes.Count; i++)
+                        {
+                            val = val.Replace("$" + (i + 1).ToString(), GenericTypes[i].FQN);
+                        }
+                        return val;
+                    }
+                }
+                */
         public bool IsNullable => true;
 
         public bool IsValid

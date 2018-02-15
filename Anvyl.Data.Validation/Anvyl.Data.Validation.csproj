@@ -1,11 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Anvyl.Data.Validation.Abstract\Anvyl.Data.Validation.Abstract.csproj" />
+    <ProjectReference Include="..\Anvyl.Data\Anvyl.Data.csproj" />
   </ItemGroup>
 
 </Project>

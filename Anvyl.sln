@@ -15,9 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anvyl.Reflection", "Anvyl.R
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anvyl.Experimental.Library", "Anvyl.Experimental.Library\Anvyl.Experimental.Library.csproj", "{71F400BE-2B6C-4F6E-982F-5E570FF49483}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anvyl.Data.Validation.Abstract", "Anvyl.Data.Validation.Abstract\Anvyl.Data.Validation.Abstract.csproj", "{661A8D74-68B9-4AC1-A886-B4A734300D34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anvyl.Data.Validation.Abstract", "Anvyl.Data.Validation.Abstract\Anvyl.Data.Validation.Abstract.csproj", "{661A8D74-68B9-4AC1-A886-B4A734300D34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anvyl.Data.Validation", "Anvyl.Data.Validation\Anvyl.Data.Validation.csproj", "{0ADF2278-053E-4758-B635-141340A79F93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anvyl.Data.Validation", "Anvyl.Data.Validation\Anvyl.Data.Validation.csproj", "{0ADF2278-053E-4758-B635-141340A79F93}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anvyl.Extensions.Configuration", "Anvyl.Extensions.Configuration\Anvyl.Extensions.Configuration.csproj", "{86250066-C52C-4154-89A3-F5AF1EE2418F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anvyl.Data.Configuration.Edit", "Anvyl.Data.Configuration.Edit\Anvyl.Data.Configuration.Edit.csproj", "{0AD13D6D-2583-4290-88E7-22427A069B07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anvyl.AssemblyLoader.Extensions", "Anvyl.AssemblyLoader.Extensions\Anvyl.AssemblyLoader.Extensions.csproj", "{2C341529-7423-4E4E-B8E6-816E980FA616}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,18 @@ Global
 		{0ADF2278-053E-4758-B635-141340A79F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ADF2278-053E-4758-B635-141340A79F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ADF2278-053E-4758-B635-141340A79F93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86250066-C52C-4154-89A3-F5AF1EE2418F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86250066-C52C-4154-89A3-F5AF1EE2418F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86250066-C52C-4154-89A3-F5AF1EE2418F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86250066-C52C-4154-89A3-F5AF1EE2418F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AD13D6D-2583-4290-88E7-22427A069B07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AD13D6D-2583-4290-88E7-22427A069B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AD13D6D-2583-4290-88E7-22427A069B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AD13D6D-2583-4290-88E7-22427A069B07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C341529-7423-4E4E-B8E6-816E980FA616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C341529-7423-4E4E-B8E6-816E980FA616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C341529-7423-4E4E-B8E6-816E980FA616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C341529-7423-4E4E-B8E6-816E980FA616}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

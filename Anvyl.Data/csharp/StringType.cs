@@ -19,7 +19,7 @@ namespace Anvyl.Data.csharp
         public string FQN => "csharp.string";
         public List<IDatatype> GenericTypes { get; } = new List<IDatatype>();
         public bool IsNullable => true;
-
+        public bool IsPOCO => true;
         public bool IsValid { get
             {
                 return true;
@@ -51,6 +51,11 @@ namespace Anvyl.Data.csharp
         public bool Validate<T>(T data)
         {
             return true;
+        }
+
+        public Type GetCodeType()
+        {
+            return typeof(string);
         }
     }
 }

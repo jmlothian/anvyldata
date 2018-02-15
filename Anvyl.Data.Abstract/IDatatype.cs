@@ -8,6 +8,7 @@ namespace Anvyl.Data.Abstract
     public interface IDatatype
     {
         IDatatype Datatype { get; }
+        Type GetCodeType();
         string FQN { get; }
         /*
         bool FromObject(object obj);
@@ -18,5 +19,6 @@ namespace Anvyl.Data.Abstract
         bool IsValid { get; }
         string Inherits { get; }
         List<IDatatype> GenericTypes { get; }
+        bool IsPOCO { get; }
     }
 }

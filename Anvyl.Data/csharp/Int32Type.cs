@@ -19,14 +19,17 @@ namespace Anvyl.Data.csharp
         public string FQN => "csharp.int32";
         public List<IDatatype> GenericTypes { get; } = new List<IDatatype>();
         public bool IsNullable => false;
-
+        public bool IsPOCO => true;
         public bool IsValid { get
             {
                 return true;
             }
         }
         public string Inherits => null;
-
+        public Type GetCodeType()
+        {
+            return typeof(Int32);
+        }
         //provided as a static singleton - can't have statics in an interface, so use this convention
         internal static IDatatype _dataType = new Int32Type();
         //bind to the static version

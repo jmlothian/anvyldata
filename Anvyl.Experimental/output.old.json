@@ -1,10 +1,10 @@
-{"Accufiguration" : {
-  "Id" : "73537462-9d88-45d6-856d-42cba358d241",
+{"AccufigurationSettings" : {
+  "Id" : "9c474c76-ff31-47fb-b22e-d7ccad01d9e9",
   "Datatype" : "AccuWeather.Configuration.Models.Accufiguration.AccufigurationSettings",
   "FieldLabel" : "AccufigurationSettings",
   "Members" : {
     "BaseUrl" : {
-      "Id" : "283ef049-ec47-4010-b96e-37761508ca2b",
+      "Id" : "85da320c-52e2-4e3b-8acb-0fe7af117260",
       "Datatype" : "csharp.string",
       "FieldLabel" : "BaseUrl",
       "Members" : {
@@ -15,7 +15,7 @@
       }
     },
     "LocalIisPort" : {
-      "Id" : "36b0a0b9-be8c-453c-9eaa-0b7f4e6bbac6",
+      "Id" : "de50f776-f35c-470c-b8f0-b6c010610da0",
       "Datatype" : "csharp.int32.nullable",
       "FieldLabel" : "LocalIisPort",
       "Members" : {
@@ -26,7 +26,7 @@
       }
     },
     "LocalProjectPort" : {
-      "Id" : "efeccd7d-f98f-4c4b-8eec-318e83a77cdc",
+      "Id" : "b8ad4ecf-ed8f-4518-978c-30fd6634bb6a",
       "Datatype" : "csharp.int32.nullable",
       "FieldLabel" : "LocalProjectPort",
       "Members" : {
@@ -37,7 +37,7 @@
       }
     },
     "ServiceFabricPort" : {
-      "Id" : "79490b57-532e-49e0-b81a-96c47214f73b",
+      "Id" : "efc2a249-6607-4c02-8740-d3ca465d0291",
       "Datatype" : "csharp.int32.nullable",
       "FieldLabel" : "ServiceFabricPort",
       "Members" : {
@@ -48,7 +48,7 @@
       }
     },
     "Application" : {
-      "Id" : "54caf6ea-c595-4fc8-b317-e93629bdd86f",
+      "Id" : "a75a8527-ed8d-4bd8-80f3-464cc47e5edd",
       "Datatype" : "csharp.string",
       "FieldLabel" : "Application",
       "Members" : {
@@ -59,7 +59,7 @@
       }
     },
     "Environment" : {
-      "Id" : "6408b2e3-7049-4c4e-88fe-19f13f5e82f9",
+      "Id" : "1b1ac37a-37d0-4ac5-b7f4-d68b5bdfbb1e",
       "Datatype" : "csharp.string",
       "FieldLabel" : "Environment",
       "Members" : {
@@ -70,7 +70,7 @@
       }
     },
     "Site" : {
-      "Id" : "21af3b26-db15-4e61-9728-ad09a33e035d",
+      "Id" : "b531f0ff-5c63-4eb7-819c-9c8f521383f5",
       "Datatype" : "csharp.string",
       "FieldLabel" : "Site",
       "Members" : {
@@ -81,15 +81,15 @@
       }
     },
     "Sources" : {
-      "Id" : "4c2b17a8-fc31-4a7f-a51f-dff992643909",
-      "Datatype" : "csharp.dictionary<$1,$2>",
+      "Id" : "23afee4a-228a-4f17-bc9c-6fb7bda14ccb",
+      "Datatype" : "csharp.dictionary<csharp.string,AccuWeather.Configuration.Models.Accufiguration.RemoteConfigSourceSettings>",
       "FieldLabel" : "Sources",
       "Members" : {
 
       },
       "GenericParameters" : {
         "String" : {
-          "Id" : "784636a2-3c9b-41b2-9b83-85ddf0395cc0",
+          "Id" : "b0a2cd21-52b0-4361-a96e-8fd03fba1c6b",
           "Datatype" : "csharp.string",
           "FieldLabel" : "String",
           "Members" : {
@@ -100,7 +100,7 @@
           }
         },
         "RemoteConfigSourceSettings" : {
-          "Id" : "548bbd47-7db9-488c-b53f-9e0bd15d71d1",
+          "Id" : "c8d3aeee-082b-42b5-83ae-d760269557e1",
           "Datatype" : "AccuWeather.Configuration.Models.Accufiguration.RemoteConfigSourceSettings",
           "FieldLabel" : "RemoteConfigSourceSettings",
           "Members" : {
@@ -113,7 +113,7 @@
       }
     },
     "ReloadTimer" : {
-      "Id" : "c37f6ed9-6eb4-4feb-8d23-fd06c4c136e6",
+      "Id" : "387459a9-771c-413d-a4a5-1f4f8117a3b3",
       "Datatype" : "AccuWeather.Configuration.Models.Accufiguration.ReloadTimerSettings",
       "FieldLabel" : "ReloadTimer",
       "Members" : {
@@ -124,112 +124,17 @@
       }
     },
     "SomeList" : {
-      "Id" : "17a1a4d2-fc60-454d-93cc-193b8a0d5b2e",
-      "Datatype" : "csharp.list<$1>",
+      "Id" : "1aaab756-67e1-4f5e-bc88-ddef0c2efa33",
+      "Datatype" : "csharp.list<csharp.int32>",
       "FieldLabel" : "SomeList",
       "Members" : {
 
       },
       "GenericParameters" : {
         "Int32" : {
-          "Id" : "fbb6b38c-12d0-42ff-b101-352deab7ead9",
+          "Id" : "d3a90899-26e6-46a6-b62a-e3b2e1e9db28",
           "Datatype" : "csharp.int32",
           "FieldLabel" : "Int32",
-          "Members" : {
-
-          },
-          "GenericParameters" : {
-
-          }
-        }
-      }
-    },
-    "ReloadList" : {
-      "Id" : "d21810cb-3855-48c8-9342-0c70b5d15b65",
-      "Datatype" : "csharp.list<$1>",
-      "FieldLabel" : "ReloadList",
-      "Members" : {
-
-      },
-      "GenericParameters" : {
-        "ReloadTimerSettings" : {
-          "Id" : "bf4934dd-5a67-4e24-92d5-a548fdbecf75",
-          "Datatype" : "AccuWeather.Configuration.Models.Accufiguration.ReloadTimerSettings",
-          "FieldLabel" : "ReloadTimerSettings",
-          "Members" : {
-
-          },
-          "GenericParameters" : {
-
-          }
-        }
-      }
-    }
-  },
-  "GenericParameters" : {
-
-  }
-},
-"EmbeddedThings" : {
-  "Id" : "e32a06fd-715e-4d55-8781-95c63624634f",
-  "Datatype" : "AccuWeather.Configuration.Models.Accufiguration.EmbeddedThings",
-  "FieldLabel" : "EmbeddedThings",
-  "Members" : {
-    "MyThing" : {
-      "Id" : "e45fd048-f43d-4a33-bae6-537b0230b79f",
-      "Datatype" : "csharp.string",
-      "FieldLabel" : "MyThing",
-      "Members" : {
-
-      },
-      "GenericParameters" : {
-
-      }
-    },
-    "ints" : {
-      "Id" : "f6516304-fdda-4e73-aefd-118e09f7d2d9",
-      "Datatype" : "csharp.list<$1>",
-      "FieldLabel" : "ints",
-      "Members" : {
-
-      },
-      "GenericParameters" : {
-        "Int32" : {
-          "Id" : "0f6575b0-6b77-4db9-bf50-d137700fbadd",
-          "Datatype" : "csharp.int32",
-          "FieldLabel" : "Int32",
-          "Members" : {
-
-          },
-          "GenericParameters" : {
-
-          }
-        }
-      }
-    },
-    "dicts" : {
-      "Id" : "43039d9e-b657-4ebd-97af-70ea3575851b",
-      "Datatype" : "csharp.dictionary<$1,$2>",
-      "FieldLabel" : "dicts",
-      "Members" : {
-
-      },
-      "GenericParameters" : {
-        "String" : {
-          "Id" : "b677a46f-3ec3-4bad-887a-826e51667ff8",
-          "Datatype" : "csharp.string",
-          "FieldLabel" : "String",
-          "Members" : {
-
-          },
-          "GenericParameters" : {
-
-          }
-        },
-        "String" : {
-          "Id" : "fc20b81a-2af2-466f-9567-c5c5af632897",
-          "Datatype" : "csharp.string",
-          "FieldLabel" : "String",
           "Members" : {
 
           },
@@ -245,54 +150,23 @@
   }
 },
 "ReloadTimerSettings" : {
-  "Id" : "7b54671d-e97e-4300-bd8e-b9eb2ce5aae3",
+  "Id" : "a7bb6199-35b6-43f5-8337-4f93227a0040",
   "Datatype" : "AccuWeather.Configuration.Models.Accufiguration.ReloadTimerSettings",
   "FieldLabel" : "ReloadTimerSettings",
   "Members" : {
-    "Things" : {
-      "Id" : "eacd409e-cea2-4fd7-80cb-4bb52979ce82",
-      "Datatype" : "AccuWeather.Configuration.Models.Accufiguration.EmbeddedThings",
-      "FieldLabel" : "Things",
-      "Members" : {
 
-      },
-      "GenericParameters" : {
-
-      }
-    },
-    "ListThings" : {
-      "Id" : "580e49ae-a0e2-40dd-9701-ce825b956adc",
-      "Datatype" : "csharp.list<$1>",
-      "FieldLabel" : "ListThings",
-      "Members" : {
-
-      },
-      "GenericParameters" : {
-        "EmbeddedThings" : {
-          "Id" : "54d9679a-9c1f-4eb4-84ab-1884449c133b",
-          "Datatype" : "AccuWeather.Configuration.Models.Accufiguration.EmbeddedThings",
-          "FieldLabel" : "EmbeddedThings",
-          "Members" : {
-
-          },
-          "GenericParameters" : {
-
-          }
-        }
-      }
-    }
   },
   "GenericParameters" : {
 
   }
 },
 "RemoteConfigSourceSettings" : {
-  "Id" : "30f451b4-a288-4ad0-982b-736e6477cb38",
+  "Id" : "66b059f2-ea50-4144-8211-4f7283ebaa1e",
   "Datatype" : "AccuWeather.Configuration.Models.Accufiguration.RemoteConfigSourceSettings",
   "FieldLabel" : "RemoteConfigSourceSettings",
   "Members" : {
     "BaseUrl" : {
-      "Id" : "95897ff1-f6e1-4ed9-86a2-fa3cea702a05",
+      "Id" : "02c45800-d244-472b-b918-3ec9d5c8f31a",
       "Datatype" : "csharp.string",
       "FieldLabel" : "BaseUrl",
       "Members" : {
@@ -303,7 +177,7 @@
       }
     },
     "LocalIisPort" : {
-      "Id" : "4e10c844-218b-4401-b73b-8cc1f33245b0",
+      "Id" : "5f7464d2-58b2-4068-872d-4ed2f46a9e0a",
       "Datatype" : "csharp.int32.nullable",
       "FieldLabel" : "LocalIisPort",
       "Members" : {
@@ -314,7 +188,7 @@
       }
     },
     "LocalProjectPort" : {
-      "Id" : "092d7156-f850-439f-a1ea-5b3ac33f6839",
+      "Id" : "cc555f5b-c310-4b01-9846-982bb27522be",
       "Datatype" : "csharp.int32.nullable",
       "FieldLabel" : "LocalProjectPort",
       "Members" : {
@@ -325,7 +199,7 @@
       }
     },
     "ServiceFabricPort" : {
-      "Id" : "eab51d35-c72b-4c82-89dc-15928f864ad9",
+      "Id" : "c123cbdc-0f97-4458-9900-d35f3c8f14ef",
       "Datatype" : "csharp.int32.nullable",
       "FieldLabel" : "ServiceFabricPort",
       "Members" : {
@@ -336,7 +210,7 @@
       }
     },
     "Application" : {
-      "Id" : "83e99a7e-d4ee-4536-ba06-49897e82bc5b",
+      "Id" : "67991586-d59a-4a71-8c4c-5e24674e1a5c",
       "Datatype" : "csharp.string",
       "FieldLabel" : "Application",
       "Members" : {
@@ -347,7 +221,7 @@
       }
     },
     "Schema" : {
-      "Id" : "d993f78b-952d-428c-8a3f-8c61665afa80",
+      "Id" : "34b8def7-9c60-4006-9ff1-7200e7d50bd2",
       "Datatype" : "csharp.string",
       "FieldLabel" : "Schema",
       "Members" : {
@@ -358,7 +232,7 @@
       }
     },
     "Environment" : {
-      "Id" : "48a7b32c-a264-4ec4-bb89-154863a2ca46",
+      "Id" : "d419a582-8238-42d4-9e57-98d3f06db3ea",
       "Datatype" : "csharp.string",
       "FieldLabel" : "Environment",
       "Members" : {
@@ -369,7 +243,7 @@
       }
     },
     "Site" : {
-      "Id" : "ed1a13b4-2d8d-4048-b41e-feda3a1077c8",
+      "Id" : "d4f2bd08-daec-4951-9d49-1136830ba090",
       "Datatype" : "csharp.string",
       "FieldLabel" : "Site",
       "Members" : {
@@ -380,7 +254,7 @@
       }
     },
     "SchemaVersion" : {
-      "Id" : "33c14dbb-215e-4243-b5aa-0d77d5b034cf",
+      "Id" : "0d9ac5d7-ff63-47df-b895-7f16a58d5e46",
       "Datatype" : "csharp.string",
       "FieldLabel" : "SchemaVersion",
       "Members" : {
@@ -391,7 +265,7 @@
       }
     },
     "ValuesVersion" : {
-      "Id" : "4fa9ed96-d2b3-43cc-b1ed-a1e94cc8f625",
+      "Id" : "724cfa54-1a69-4c34-b1be-68667efa1501",
       "Datatype" : "csharp.string",
       "FieldLabel" : "ValuesVersion",
       "Members" : {
@@ -402,7 +276,7 @@
       }
     },
     "TemplateUrl" : {
-      "Id" : "477e2bdd-a13c-4307-9140-954dd9647ad6",
+      "Id" : "ea14ac39-2792-4fbe-ac5c-de39a89e6597",
       "Datatype" : "csharp.string",
       "FieldLabel" : "TemplateUrl",
       "Members" : {

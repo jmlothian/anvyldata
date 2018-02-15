@@ -3,28 +3,22 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <StartupObject>Anvyl.Data.Configuration.Edit.Program</StartupObject>
+    <AssemblyName>adce</AssemblyName>
+    <RuntimeIdentifier>win10-x64</RuntimeIdentifier>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="xpconfig.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="xpconfig.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.0.0" />
+    <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Ini" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Anvyl.Data.Validation.Abstract\Anvyl.Data.Validation.Abstract.csproj" />
+    <ProjectReference Include="..\Anvyl.Data.Abstract\Anvyl.Data.Abstract.csproj" />
     <ProjectReference Include="..\Anvyl.Data.Validation\Anvyl.Data.Validation.csproj" />
-    <ProjectReference Include="..\Anvyl.Experimental.Library\Anvyl.Experimental.Library.csproj" />
+    <ProjectReference Include="..\Anvyl.Data\Anvyl.Data.csproj" />
+    <ProjectReference Include="..\Anvyl.Experimental\Anvyl.Experimental.csproj" />
     <ProjectReference Include="..\Anvyl.Extensions.Configuration\Anvyl.Extensions.Configuration.csproj" />
     <ProjectReference Include="..\Anvyl.Reflection\Anvyl.Reflection.csproj" />
   </ItemGroup>

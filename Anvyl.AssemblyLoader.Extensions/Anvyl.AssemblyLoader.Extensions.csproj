@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.0.1-pre</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Anvyl.Data.Abstract\Anvyl.Data.Abstract.csproj" />
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="2.0.4" />
+    <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
   </ItemGroup>
 
 </Project>
